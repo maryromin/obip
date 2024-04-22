@@ -1,15 +1,11 @@
 import random
-#генерируем два целочисленных массива
 array1 = random.sample(range(100), 10)
-array2 = random.sample(range(100), 10)
-#выводим массивы  
+array2 = random.sample(range(100), 10)  
 print("массив1: ",array1)
 print("массив2: ",array2)
-
 min=None
 for num in array1:
     if num not in array2:
         if min is None or num< min:
             min=num
-
 print("наименьший элемент первого массива, не входящий во второй массив: ", min)
